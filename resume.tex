@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{classic}                             % Style options: 'casual', 'classic', 'oldstyle', 'banking'
+\moderncvcolor{blue}                                % Color options: 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+\renewcommand{\familydefault}{\sfdefault}           % Default font is the sans serif font
+
+% Adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+% Personal data
+\name{William}{Bell}
+\address{10 Rogers Ave}{Somerville, MA 02144}{}
+\phone[mobile]{(662)~610~0467}
+\email{wjbell97@gmail.com}
+
+% Content
+\begin{document}
+
+\makecvtitle
+
+\section{Summary}
+An enthusiastic engineer with diverse experience who is driven to boost colleagues' productivity with better tools.
+
+\section{Experience}
+\cventry{Jun 2023 -- Present}{Software Engineer}{MathWorks}{}{}{
+  \begin{itemize}
+    \item Develop cloud-native tools, infrastructure, and applications for MathWorks developers and customers.
+    \item Contribute code and infrastructure changes to ensure observability, high-availability, and scalability.
+    \item Implement and maintain CI/CD pipelines to automate software delivery processes.
+    \item Collaborate with cross-functional teams to deliver high-quality software products.
+  \end{itemize}
+}
+\cventry{Mar 2022 -- Jun 2023}{Application Support Engineer}{MathWorks}{}{}{
+  \begin{itemize}
+    \item Completed project rotations with teams, including robotics toolboxes, ROS Toolbox, and IoT products such as ThingSpeak.
+    \item Supported MathWorks' code generation products and contributed to development teams in the MATLAB Online group.
+    \item Assisted customers in using code generation technologies and provided technical support.
+    \item Gained experience in Go, TypeScript, IoT, code generation, C/C++, and MATLAB.
+  \end{itemize}
+}
+\cventry{May 2021 -- Jan 2022}{Intern}{MathWorks}{}{}{
+  \begin{itemize}
+    \item Augmented trajectory optimization capabilities for differentially flat systems in the Navigation and UAV Toolboxes.
+    \item Evaluated various third-party quadratic and nonlinear solvers for robotics applications.
+  \end{itemize}
+}
+\cventry{Jun 2019 -- May 2021}{Aerospace Engineer}{Dynetics, Inc.}{}{}{
+  \begin{itemize}
+    \item Co-owned a company-wide library of simulation and control tools written in Python.
+    \item Designed and implemented path planning and collision-avoidance algorithms for UAV route planning software.
+    \item Implemented state-of-the-art reinforcement learning algorithms and other machine learning techniques.
+  \end{itemize}
+}
+
+\section{Education}
+\cventry{2019}{Bachelor of Science}{Mississippi State University}{Aerospace Engineering}{}{}
+\cventry{2021}{Master of Science}{Boston University}{Robotics and Autonomous Systems}{}{}
+
+\section{Skills}
+\cvitem{Languages}{Go, Python, TypeScript, C/C++}
+\cvitem{Cloud}{AWS, Kubernetes, Containerization}
+\cvitem{Observability}{Prometheus, OpenTelemetry, Grafana, Jaeger, Splunk}
+\cvitem{Test and Release}{Go test packages (e.g. \texttt{testing}, \texttt{testcontainers}), k6 load-testing, TeamCity CI/CD}
+
+\end{document}
